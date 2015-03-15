@@ -17,5 +17,5 @@ function generate() {
     topicContainer.innerHTML = topic;
 }
  
-document.addEventListener('load', generate, false);
+window.addEventListener('load', generate, false);
 btn.addEventListener('click', generate, false);   
