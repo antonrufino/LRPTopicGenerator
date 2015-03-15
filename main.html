@@ -8,13 +8,16 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     </head>
-    <body>
+    <body style="background: #eee">
         <div class="container-fluid">
             <h1>LRP Topic Generator</h1>
         </div>
-        <div class="jumbotron text-center">
-            <h1>Lorem ipsum</h1>
-            <span class="lead">Corny? </span><button type="button" class="btn btn-primary btn-lg">Make another topic</button>
+        <div class="jumbotron text-center" >
+            <h1 id="topic">Lorem ipsum</h1>
+            <span class="lead">Corny? </span><button type="button" class="btn btn-primary btn-lg" id="btn">Make another topic</button>
         </div>
+        
+        <script type="text/javascript" src="constants.js"></script>
+        <script type="text/javascript" src="gen.js"></script>
     </body>
 </html>
