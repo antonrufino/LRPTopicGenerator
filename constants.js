@@ -9,9 +9,13 @@ var templates = [
     ["A mathematical analysis of the effects of ", " on ", ""],
     ["Constructing computational models of ", " using ", ""],
     ["An analysis of ", ""],
-    ["On the benefits of ", ""]
+    ["On the benefits of ", ""],
+    ["Using ", " as a means of eliminating poverty."],
+    ["Eliminating corruption using ", " and ", ""]
 ]
 
 var topics = ["PNoy", "Vice Ganda", "That Thing Called Tadhana", "Fifty Shades of Gray", 
     "piracy", "hugot", "LRP", "CMSC 56", "CMSC 11", "MATH 17", "my hopes and dreams", 
-    "communism", "\"fuck this shit\"", "PewDiePie", "Our Lord and Savior, Tatsuya Stu (MTSBWY)"]
+    "communism", "\"fuck this shit\"", "PewDiePie", "anime", "the GTA", "Grande", "Tablazon", "Abello",
+    "Chancy", "finals", "LEs", "papers", "more papers" "UPLB", "DOTA 2", "LOL", "shabu", "n00bs", "Oble", "Mariang Bangag",
+    "Napenas", "Arroyo", "Binay", "Wattpad", "UPCAT"]
