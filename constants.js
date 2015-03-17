@@ -18,4 +18,5 @@ var topics = ["PNoy", "Vice Ganda", "That Thing Called Tadhana", "Fifty Shades o
     "piracy", "hugot", "LRP", "CMSC 56", "CMSC 11", "MATH 17", "my hopes and dreams", 
     "communism", "\"fuck this shit\"", "PewDiePie", "anime", "the GTA", "Grande", "Tablazon", "Abello",
     "Chancy", "finals", "LEs", "papers", "more papers", "UPLB", "DOTA 2", "LOL", "shabu", "n00bs", "Oble", "Mariang Bangag",
-    "Napenas", "Arroyo", "Binay", "Wattpad", "UPCAT"]
+    "Napenas", "Arroyo", "Binay", "Wattpad", "UPCAT", "MATH 36", "SOSC 3", "NASC 1", "NASC 2", "NASC 3", "NASC 6", 
+    "NASC 10", "PSY 1", "POSC 1", "HUME 10"]
