@@ -12,7 +12,7 @@ var templates = [
     ["On the benefits of ", ""],
     ["Using ", " as a means of eliminating poverty."],
     ["Eliminating corruption using ", " and ", ""],
-    ["Feasibility analysis of using ", "as a substitute for " ": the Philippine context."],
+    ["Feasibility analysis of using ", "as a substitute for ", ": the Philippine context."],
     ["On the effects of ", " on voter preferences."]
 ]
 
