@@ -11,7 +11,9 @@ var templates = [
     ["An analysis of ", ""],
     ["On the benefits of ", ""],
     ["Using ", " as a means of eliminating poverty."],
-    ["Eliminating corruption using ", " and ", ""]
+    ["Eliminating corruption using ", " and ", ""],
+    ["Feasibility analysis of using ", "as a substitute for " ": the Philippine context."],
+    ["On the effects of ", " on voter preferences."]
 ]
 
 var topics = ["PNoy", "Vice Ganda", "That Thing Called Tadhana", "Fifty Shades of Gray", 
@@ -19,4 +21,5 @@ var topics = ["PNoy", "Vice Ganda", "That Thing Called Tadhana", "Fifty Shades o
     "communism", "existence of forever", "PewDiePie", "anime", "the GTA", "Grande", "Tablazon", "Abello",
     "Chancy", "finals", "LEs", "papers", "more papers", "UPLB", "DOTA 2", "LOL", "shabu", "n00bs", "Oble", "Mariang Bangag",
     "Arroyo", "Binay", "Wattpad", "UPCAT", "hugot", "pickup lines", "SU", "Grace Poe", "Binay", "Duterte", "Mar Roxas", 
-    "nuisance candidates", "Fifty Shades of Black", "Deadpool"]
+    "nuisance candidates", "Fifty Shades of Black", "Deadpool", "Hunger Games", "zero units", 
+    "the fundamental question of \"Reg ka na ba?\""]
