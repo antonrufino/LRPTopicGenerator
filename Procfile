@@ -1,1 +1,1 @@
-web: node backend/server.js
+web: cd frontend; npm install; cd ..; node backend/server.js
