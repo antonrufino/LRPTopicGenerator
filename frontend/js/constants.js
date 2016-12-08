@@ -1,4 +1,4 @@
-var templates = [
+const templates = [
     ["Analysis of the effects of ", " on ", ""],
     ["The Pros and Cons of replacing ", " with ", ""],
     ["Why the Philippines should ban ", " and ", ""],
@@ -16,10 +16,10 @@ var templates = [
     ["On the effects of ", " on voter preferences."]
 ]
 
-var topics = ["PNoy", "Vice Ganda", "That Thing Called Tadhana", "Fifty Shades of Gray", 
-    "piracy", "hugot", "LRP", "CMSC 56", "CMSC 11", "MATH 17", "my hopes and dreams", 
+const topics = ["PNoy", "Vice Ganda", "That Thing Called Tadhana", "Fifty Shades of Gray", 
+    "piracy", "hugot", "LRP", "CMSC 56", "CMSC 11", "MATH 17", "my hopes and dreams",
     "communism", "existence of forever", "PewDiePie", "anime", "the GTA", "Grande", "Tablazon", "Abello",
     "Chancy", "finals", "LEs", "papers", "more papers", "UPLB", "DOTA 2", "LOL", "shabu", "n00bs", "Oble", "Mariang Bangag",
-    "Arroyo", "Binay", "Wattpad", "UPCAT", "hugot", "pickup lines", "SU", "Grace Poe", "Binay", "Duterte", "Mar Roxas", 
-    "nuisance candidates", "Fifty Shades of Black", "Deadpool", "Hunger Games", "zero units", 
+    "Arroyo", "Binay", "Wattpad", "UPCAT", "hugot", "pickup lines", "SU", "Grace Poe", "Binay", "Duterte", "Mar Roxas",
+    "nuisance candidates", "Fifty Shades of Black", "Deadpool", "Hunger Games", "zero units",
     "the fundamental question of \"Reg ka na ba?\""]

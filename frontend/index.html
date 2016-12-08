@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
     <head>
         <title>LRP Topic Generator</title>
         <meta charset="utf-8">
@@ -11,10 +11,19 @@
     <body style="background: #eee">
         <div class="container-fluid">
             <h1>LRP Topic Generator</h1>
-            <div class="jumbotron text-center">
-                <h1 id="topic">Lorem ipsum</h1>
+            <div class="jumbotron text-center" ng-controller="TopicController as TopicCtrl">
+                <h1 ng-show="TopicCtrl.notLoadedYet">Loading...</h1>
+                <h1 id="topic"
+                    ng-show="!TopicCtrl.notLoadedYet">
+                    {{TopicCtrl.generatedTopic}}
+                </h1>
                 <span class="lead">Rejected by sir/ma'am? </span>
-                <button type="button" class="btn btn-primary btn-lg" id="btn">Make another topic</button>
+                <button type="button"
+                    class="btn btn-primary btn-lg"
+                    id="btn"
+                    ng-click="TopicCtrl.generate()">
+                    Make another topic
+                </button>
             </div>
             <div class="row">
                 <div class="col-sm-12" style="position:absolute; bottom:0">
@@ -23,7 +32,14 @@
             </div>
         </div>
 
+        <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+        <script type="text/javascript" src="node_modules/angular-aria/angular-aria.min.js"></script>
+        <script type="text/javascript" src="node_modules/angular-animate/angular-animate.min.js"></script>
+        <script type="text/javascript" src="node_modules/angular-material/angular-material.min.js"></script>
+
         <script type="text/javascript" src="js/constants.js"></script>
-        <script type="text/javascript" src="js/gen.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script type="text/javascript" src="js/services/trend-service.js"></script>
+        <script type="text/javascript" src="js/controllers/topic-controller.js"></script>
     </body>
 </html>
