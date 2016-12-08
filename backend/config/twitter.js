@@ -1,5 +1,4 @@
 const Twitter = require('twitter');
-require('dotenv').config({path: __dirname + '/../../.env'});
 
 const client = new Twitter({
     consumer_key: process.env.TWITTER_CONSUMER_KEY,

@@ -15,7 +15,8 @@
             <div class="jumbotron text-center" ng-controller="TopicController as TopicCtrl">
                 <h1 ng-show="TopicCtrl.notLoadedYet">Loading...</h1>
                 <h1 id="topic"
-                    ng-show="!TopicCtrl.notLoadedYet">
+                    ng-show="!TopicCtrl.notLoadedYet"
+                    ng-cloak>
                     {{TopicCtrl.generatedTopic}}
                 </h1>
                 <span class="lead" ng-show="!TopicCtrl.notLoadedYet">
