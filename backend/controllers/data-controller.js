@@ -6,7 +6,6 @@ let recentTrends = null;
 
 exports.getTrends = (req, res) => {
     if (recentTrends === null || moment().diff(lastRequest, 'minutes') > 60) {
-        console.log(lastRequest.diff(moment(), 'minutes'));
         twitter.get('trends/place.json', {
             id: 23424934
         }, (err, data, response) => {
