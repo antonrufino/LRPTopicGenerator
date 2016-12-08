@@ -18,8 +18,8 @@ var templates = [
 
 var topics = ["PNoy", "Vice Ganda", "That Thing Called Tadhana", "Fifty Shades of Gray", 
     "piracy", "hugot", "LRP", "CMSC 56", "CMSC 11", "MATH 17", "my hopes and dreams", 
-    "communism", "existence of forever", "PewDiePie", "anime", "the GTA", "Grande", "Tablazon", "Abello",
+    "communism", "existence of forever", "PewDiePie", "anime", "the GTA", "Mocha Uson", "Leila De Lima", "Marcos", "Dayan",
     "Chancy", "finals", "LEs", "papers", "more papers", "UPLB", "DOTA 2", "LOL", "shabu", "n00bs", "Oble", "Mariang Bangag",
     "Arroyo", "Binay", "Wattpad", "UPCAT", "hugot", "pickup lines", "SU", "Grace Poe", "Binay", "Duterte", "Mar Roxas", 
     "nuisance candidates", "Fifty Shades of Black", "Deadpool", "Hunger Games", "zero units", 
-    "the fundamental question of \"Reg ka na ba?\""]
+    "the fundamental question of \"Reg ka na ba?\"", "SAIS", "eUP", "PAEP"]
