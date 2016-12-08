@@ -17,10 +17,13 @@
                     ng-show="!TopicCtrl.notLoadedYet">
                     {{TopicCtrl.generatedTopic}}
                 </h1>
-                <span class="lead">Rejected by sir/ma'am? </span>
+                <span class="lead" ng-show="!TopicCtrl.notLoadedYet">
+                    Rejected by sir/ma'am?
+                </span>
                 <button type="button"
                     class="btn btn-primary btn-lg"
                     id="btn"
+                    ng-show="!TopicCtrl.notLoadedYet"
                     ng-click="TopicCtrl.generate()">
                     Make another topic
                 </button>
