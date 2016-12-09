@@ -6,13 +6,14 @@
     function TopicController(TrendService) {
         let keywords = [];
         let vm = this;
+
         vm.generatedTopic = 'a';
-        vm.notLoadedYet = true;
+        vm.dataLoaded = false;
 
         TrendService.getTwitterTrends()
         .then((data) => {
             keywords = data;
-            vm.notLoadedYet = false;
+            vm.dataLoaded = true;
             vm.generate();
         });
 
@@ -21,15 +22,12 @@
         }
 
         vm.generate = () => {
-            console.log('kek');
-            console.log(vm);
             var template = getRandom(templates);
             vm.generatedTopic = ""
 
             for (var i = 0; i < (template.length - 1); ++i) {
                 let keyword = getRandom(keywords);
 
-                console.log(keyword);
                 if (typeof keyword === 'object') {
                     keyword = `<a href="${keyword.url}">${keyword.name}</a>`;
                 }
@@ -39,6 +37,5 @@
 
             angular.element('#topic').html(vm.generatedTopic += template[template.length - 1]);
         }
-
     }
 })();

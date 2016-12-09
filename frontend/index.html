@@ -4,39 +4,47 @@
         <title>LRP Topic Generator</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="node_modules/angular-material/angular-material.min.css" />
         <link rel="stylesheet" href="css/main.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     </head>
-    <body style="background: #eee">
-        <div class="container-fluid">
-            <h1>LRP Topic Generator</h1>
-            <div class="jumbotron text-center" ng-controller="TopicController as TopicCtrl">
-                <h1 ng-show="TopicCtrl.notLoadedYet">Loading...</h1>
-                <h1 id="topic"
-                    ng-show="!TopicCtrl.notLoadedYet"
-                    ng-cloak>
-                    {{TopicCtrl.generatedTopic}}
-                </h1>
-                <span class="lead" ng-show="!TopicCtrl.notLoadedYet">
-                    Rejected by sir/ma'am?
-                </span>
-                <button type="button"
-                    class="btn btn-primary btn-lg"
-                    id="btn"
-                    ng-show="!TopicCtrl.notLoadedYet"
-                    ng-click="TopicCtrl.generate()">
-                    Make another topic
-                </button>
-            </div>
-            <div class="row">
-                <div class="col-sm-12" style="position:absolute; bottom:0">
-                    <p>Get the source code <a href="https://github.com/antonrufino/LRPTopicGenerator">here</a>.</p>
+    <body>
+        <div layout="column" layout-fill>
+            <md-toolbar ng-cloak>
+                <div class="md-toolbar-tools">
+                    <h1>LRP Topic Generator</h1>
                 </div>
-            </div>
+            </md-toolbar>
+            <md-content ng-controller="TopicController as TopicCtrl" flex
+                ng-cloak layout="column" layout-align="center center"
+                class="md-primary">
+                <div layout-padding
+                    layout="column"
+                    layout-align="center center">
+                    <md-progress-circular
+                        ng-hide="TopicCtrl.dataLoaded"
+                        ng-disabled="TopicCtrl.dataLoaded"
+                        md-mode="indeterminate"
+                        md-diameter="60">
+                    </md-progress-circular>
+                    <div style="text-align: center"
+                        ng-show="TopicCtrl.dataLoaded">
+                        <h2 id="topic"
+                            class="md-display-1">
+                        </h2>
+                        <span>Not up to your prof's academic standards?
+                            <md-button
+                                class="md-raised md-primary"
+                                ng-click="TopicCtrl.generate()">
+                                Try again!
+                            </md-button>
+                        </span>
+                    </div>
+                </div>
+            </md-content>
         </div>
 
+        <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
         <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
         <script type="text/javascript" src="node_modules/angular-aria/angular-aria.min.js"></script>
         <script type="text/javascript" src="node_modules/angular-animate/angular-animate.min.js"></script>
