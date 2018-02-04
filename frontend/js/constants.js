@@ -22,4 +22,4 @@ const topics = ["PNoy", "Vice Ganda", "That Thing Called Tadhana", "Fifty Shades
     "Chancy", "finals", "LEs", "papers", "more papers", "UPLB", "DOTA 2", "LOL", "shabu", "n00bs", "Oble", "Mariang Bangag",
     "Arroyo", "Binay", "Wattpad", "UPCAT", "hugot", "pickup lines", "SU", "Grace Poe", "Binay", "Duterte", "Mar Roxas",
     "nuisance candidates", "Fifty Shades of Black", "Deadpool", "Hunger Games", "zero units",
-    "the fundamental question of \"Reg ka na ba?\""]
+    "the fundamental question of \"Reg ka na ba?\"", "SAIS", "Mocha Uson", "Duterte", "knowing da wey"]
