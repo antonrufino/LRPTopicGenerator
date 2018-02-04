@@ -4,19 +4,12 @@
         .controller('TopicController', ['TrendService', TopicController]);
 
     function TopicController(TrendService) {
-        let keywords = [];
+        let keywords = topics;
         let vm = this;
 
         vm.generatedTopic = 'a';
         vm.dataLoaded = false;
-
-        TrendService.getTwitterTrends()
-        .then((data) => {
-            keywords = data;
-            vm.dataLoaded = true;
-            vm.generate();
-        });
-
+        
         function getRandom(list) {
             return list[Math.floor(Math.random() * list.length)];
         }
@@ -37,5 +30,12 @@
 
             angular.element('#topic').html(vm.generatedTopic += template[template.length - 1]);
         }
+
+        TrendService.getTwitterTrends()
+        .then((data) => {
+            keywords = keywords.concat(data);
+            vm.dataLoaded = true;
+            vm.generate();
+        });
     }
 })();
